@@ -1,7 +1,7 @@
 # 🛒 Demo Project: Product Card
 
 This is a demo project called **Product Card**.  
-It showcases random product cards using data from the **Fake Store API**.
+It showcases random product cards using data from the Fake Store API.
 
 👉 [API Documentation](https://fakestoreapi.com/docs)
 
