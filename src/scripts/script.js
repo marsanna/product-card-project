@@ -49,6 +49,14 @@ export function useProducts() {
     localStorage.setItem("favorites", JSON.stringify(favoriteProducts));
   }
 
+  function buyArticleByTitle(title) {
+    const cleanTitle = title.trim();
+    window.open(
+      "https://www.google.com/search?q=" + encodeURIComponent(cleanTitle),
+      "_blank",
+    );
+  }
+
   const showProducts = computed(() => products.value);
 
   onMounted(async () => {
@@ -68,5 +76,6 @@ export function useProducts() {
     toggleInformation,
     selectProduct,
     setFavorites,
+    buyArticleByTitle,
   };
 }

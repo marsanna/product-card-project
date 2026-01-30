@@ -47,7 +47,12 @@
 
           <div>lieferbar in 1–2 Werktagen</div>
 
-          <button class="button t-1 b-r">Artikel kaufen</button>
+          <button
+            class="button t-1 b-r"
+            @click="buyArticleByTitle(selectedProduct.title)"
+          >
+            Artikel kaufen
+          </button>
           <button
             class="button t-1 b-g"
             v-if="selectedProduct.favorite == false"
@@ -92,5 +97,6 @@ const {
   toggleInformation,
   setFavorites,
   selectProduct,
+  buyArticleByTitle,
 } = useProducts();
 </script>
